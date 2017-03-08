@@ -3,7 +3,11 @@
 import Cocoa
 
 //Tuples allow you to group values of different types into
-//One succinct variable
+//One variable
+
+//Tuples are a great way to retrive data from functions that
+//Return multiple things, for instance, a function connecting
+//To a webpage may return 2 values
 
 class NBA{
  
