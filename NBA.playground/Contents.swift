@@ -33,7 +33,16 @@ class NBA {
 
 //Class used to describe both NBA players and Dleague players and Overseas players
 class Personnel{
-    
+    var record :Int{
+        get{
+            return self.record
+            
+        }
+        set{
+            record = newValue
+        }
+        
+    }
     
     
 }
@@ -69,23 +78,4 @@ class NbaPlayer{
         }
     }
 }
-
-
-var league = NBA()
-var curry  = NbaPlayer()
-curry.name = "Stephen Curry"
-curry.height = 76
-curry.ppg = 55.8
-var dirk = NbaPlayer()
-dirk.name = "Dirk Nowizki"
-dirk.height = 84
-dirk.ppg = 33.4
-var love = NbaPlayer()
-love.name = "Kevin Love"
-love.height = 82
-love.ppg = 20.0
-
-league.tuplePlayers = (curry, dirk, love)
-print("dasda \(league.tuplePlayers.playerOne.name)")
-
 
