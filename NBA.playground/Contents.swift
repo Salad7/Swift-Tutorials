@@ -9,18 +9,29 @@ import Cocoa
 
 class Player {
     var name:String?
-    var points:Float?
-    var assists:Float?
-    var rebounds:Float?
-    init(n:String, p:Float, a:Float, r:Float){
-        name = n;
+    var assists:Int?
+    var rebounds:Int?
+    var points:Int?
+    init(n:String, p:Int, a:Int, r:Int){
         points = p;
-        assists = a;
-        rebounds = r;
+    }
+    
+    func setPoints(a:Int){
+        points = a
+    }
+    func getPoints() -> Int{
+        if(points == nil)
+        {
+            return 0
+        }
+    return points!
     }
     
     
-    var players = [Player](count: 30)
-    
-    
+
 }
+var players = [Player]()
+players.append(Player(n:"Stephen Curry", p:279, a:38, r:3))
+print(players[0].getPoints())
+
+    
